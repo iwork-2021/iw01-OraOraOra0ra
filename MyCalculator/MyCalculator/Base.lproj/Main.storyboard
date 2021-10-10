@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,39 +14,141 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bVk-66-aUc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wib-bN-Blw">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="129.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATg-7n-QDa">
-                                                <rect key="frame" x="358" y="185" width="31" height="60"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATg-7n-QDa">
+                                                <rect key="frame" x="8" y="194" width="396" height="66"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="ATg-7n-QDa" secondAttribute="bottom" constant="25" id="D1J-BD-8Ge"/>
-                                            <constraint firstAttribute="trailing" secondItem="ATg-7n-QDa" secondAttribute="trailing" constant="25" id="slV-48-01S"/>
+                                            <constraint firstAttribute="bottom" secondItem="ATg-7n-QDa" secondAttribute="bottom" constant="10" id="6zQ-Q7-adY"/>
+                                            <constraint firstAttribute="trailing" secondItem="ATg-7n-QDa" secondAttribute="trailing" constant="10" id="LFG-Yo-n0Z"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-L4-P6U">
-                                        <rect key="frame" x="0.0" y="270" width="414" height="548"/>
+                                        <rect key="frame" x="0.0" y="129.5" width="808" height="263.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zrv-fh-Mq5">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="548"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="808" height="263.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fgu-wy-gv0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="101.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="808" height="45"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IF6-Om-5YQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meI-pV-InM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="(">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ST0-PW-kkl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rq-Hh-meo">
+                                                                <rect key="frame" x="82" y="0.0" width="71.5" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title=")">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kgC-5x-OYZ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyO-nA-Njh">
+                                                                <rect key="frame" x="163.5" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="mc">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1j-rk-jFq"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIA-k8-ez7">
+                                                                <rect key="frame" x="245.5" y="0.0" width="71.5" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="m+">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vdo-xh-ZMB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-rr-LlB">
+                                                                <rect key="frame" x="327" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="m-">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePf-u2-i9N"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyI-qd-Q7G">
+                                                                <rect key="frame" x="409" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="mr">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9UK-3Z-cG3"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPy-ot-AnO">
+                                                                <rect key="frame" x="491" y="0.0" width="71.5" height="45"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                 <state key="normal" title="AC">
@@ -53,47 +156,50 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNv-en-TXL"/>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVc-fk-ckb"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzK-WR-XvS">
-                                                                <rect key="frame" x="106" y="0.0" width="96" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yG-SK-lXG">
+                                                                <rect key="frame" x="572.5" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                 <state key="normal" title="+/-">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAw-2B-8w4"/>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZV-GU-JX9"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9M-kt-coo">
-                                                                <rect key="frame" x="212" y="0.0" width="96" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwP-8o-S6G">
+                                                                <rect key="frame" x="654.5" y="0.0" width="71.5" height="45"/>
+                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                 <state key="normal" title="%">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kjr-R6-4eM"/>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2VS-5q-RTl"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFp-14-9wn">
-                                                                <rect key="frame" x="318" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xr-w4-9HY">
+                                                                <rect key="frame" x="736" y="0.0" width="72" height="45"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                 <state key="normal" title="÷">
@@ -101,9 +207,78 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3O5-sX-lZb"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IF6-Om-5YQ">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="45"/>
+                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                                <state key="normal" title="AC">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNv-en-TXL"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzK-WR-XvS">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="45"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                                <state key="normal" title="+/-">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAw-2B-8w4"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9M-kt-coo">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="45"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                                <state key="normal" title="%">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kjr-R6-4eM"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFp-14-9wn">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                                <state key="normal" title="÷">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                                                 <connections>
                                                                     <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tjc-dd-IAg"/>
                                                                 </connections>
@@ -111,10 +286,112 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jwi-iy-RBo">
-                                                        <rect key="frame" x="0.0" y="111.5" width="414" height="101.5"/>
+                                                        <rect key="frame" x="0.0" y="55" width="808" height="44.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVQ-di-9Mb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUq-9V-S9r">
+                                                                <rect key="frame" x="0.0" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="2nd">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="Swap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEG-kz-c80"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl7-UW-DMD">
+                                                                <rect key="frame" x="82" y="0.0" width="71.5" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="x²">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NdA-bf-NfT"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmc-NI-mRc">
+                                                                <rect key="frame" x="163.5" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="x³">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8d-9U-NhU"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kq-me-qNE">
+                                                                <rect key="frame" x="245.5" y="0.0" width="71.5" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="xʸ">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPd-jf-Iyn"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuc-J8-G2l">
+                                                                <rect key="frame" x="327" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="eˣ">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smw-cq-qlb"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAR-tU-tJz">
+                                                                <rect key="frame" x="409" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="10ˣ">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhS-pq-afB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6i-TH-SnE">
+                                                                <rect key="frame" x="491" y="0.0" width="71.5" height="44.5"/>
                                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                 <state key="normal" title="7">
@@ -122,31 +399,33 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Prm-Lt-iY9"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ycC-UB-jiZ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqs-aK-JQJ">
-                                                                <rect key="frame" x="106" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FH-Cj-Toh">
+                                                                <rect key="frame" x="572.5" y="0.0" width="72" height="44.5"/>
                                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                                 <state key="normal" title="8">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rvu-11-uxL"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1m-nl-hgo"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-qA-1e3">
-                                                                <rect key="frame" x="212" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ng6-5q-eki">
+                                                                <rect key="frame" x="654.5" y="0.0" width="71.5" height="44.5"/>
                                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                 <state key="normal" title="9">
@@ -154,15 +433,16 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqP-eN-aZ2"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vt3-cY-Ej5"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvB-N2-Drz">
-                                                                <rect key="frame" x="318" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWP-Mc-Ut4">
+                                                                <rect key="frame" x="736" y="0.0" width="72" height="44.5"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                 <state key="normal" title="×">
@@ -170,9 +450,78 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SDf-Vc-fww"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVQ-di-9Mb">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Prm-Lt-iY9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqs-aK-JQJ">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rvu-11-uxL"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-qA-1e3">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqP-eN-aZ2"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvB-N2-Drz">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                                <state key="normal" title="×">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                                                 <connections>
                                                                     <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQg-t4-0yR"/>
                                                                 </connections>
@@ -180,58 +529,163 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-ot-csE">
-                                                        <rect key="frame" x="0.0" y="223" width="414" height="102"/>
+                                                        <rect key="frame" x="0.0" y="109.5" width="808" height="44.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nin-hL-JUW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="102"/>
-                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5j-jX-AOD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="1/x">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wj3-uU-rpo"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdm-nc-62H">
+                                                                <rect key="frame" x="82" y="0.0" width="71.5" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="²√x">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YC2-OW-ITE"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIX-z9-6Fn">
+                                                                <rect key="frame" x="163.5" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="³√x">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89B-kC-PZE"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1s-HA-rpT">
+                                                                <rect key="frame" x="245.5" y="0.0" width="71.5" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="ʸ√x">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qiS-cK-MdE"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L6-42-Xm5">
+                                                                <rect key="frame" x="327" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="ln">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tf-m6-4Fk"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h29-zH-wbV">
+                                                                <rect key="frame" x="409" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="log₁₀">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OW1-UY-wg0"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0Q-SA-JTV">
+                                                                <rect key="frame" x="491" y="0.0" width="71.5" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                 <state key="normal" title="4">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hce-Cy-kBT"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6W-l1-wkV"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dI-2D-gPb">
-                                                                <rect key="frame" x="106" y="0.0" width="96" height="102"/>
-                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU9-CS-Wgi">
+                                                                <rect key="frame" x="572.5" y="0.0" width="72" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                                 <state key="normal" title="5">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZIw-ub-Flz"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ai-zw-i4f"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j54-HJ-nsp">
-                                                                <rect key="frame" x="212" y="0.0" width="96" height="102"/>
-                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-OP-ZxB">
+                                                                <rect key="frame" x="654.5" y="0.0" width="71.5" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                 <state key="normal" title="6">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33n-nv-GA3"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4k-qc-Afl"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-QN-82z">
-                                                                <rect key="frame" x="318" y="0.0" width="96" height="102"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddP-c3-b0A">
+                                                                <rect key="frame" x="736" y="0.0" width="72" height="44.5"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                 <state key="normal" title="-">
@@ -239,9 +693,78 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1SN-P1-blt"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nin-hL-JUW">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hce-Cy-kBT"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dI-2D-gPb">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZIw-ub-Flz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j54-HJ-nsp">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="44.5"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33n-nv-GA3"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-QN-82z">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="44.5"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                                <state key="normal" title="-">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                                                 <connections>
                                                                     <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dkk-bl-Wee"/>
                                                                 </connections>
@@ -249,58 +772,163 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tdW-r7-orZ">
-                                                        <rect key="frame" x="0.0" y="335" width="414" height="101.5"/>
+                                                        <rect key="frame" x="0.0" y="164" width="808" height="45"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qib-Gh-uu7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUu-Gj-mTl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="x!">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooy-Et-YP5"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM1-9h-EhG">
+                                                                <rect key="frame" x="82" y="0.0" width="71.5" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="sin">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJg-9s-vJo"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-JI-OxN">
+                                                                <rect key="frame" x="163.5" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="cos">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Gk-U8-5Xa"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKX-EO-F7o">
+                                                                <rect key="frame" x="245.5" y="0.0" width="71.5" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="tan">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OqJ-4M-3Td"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOc-Kr-SJv">
+                                                                <rect key="frame" x="327" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="e">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbO-h1-ePj"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0h-JR-1Xo">
+                                                                <rect key="frame" x="409" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="EE">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="23"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkU-9R-awg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEY-Ix-Rfy">
+                                                                <rect key="frame" x="491" y="0.0" width="71.5" height="45"/>
+                                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                 <state key="normal" title="1">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="goC-Gm-UaS"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufS-Mb-AyH"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgf-vy-1Fp">
-                                                                <rect key="frame" x="106" y="0.0" width="96" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfu-fV-WiR">
+                                                                <rect key="frame" x="572.5" y="0.0" width="72" height="45"/>
+                                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                                 <state key="normal" title="2">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VE-vc-Ww4"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efi-kb-Ruf"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qc-cb-F0G">
-                                                                <rect key="frame" x="212" y="0.0" width="96" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7y-DI-FOT">
+                                                                <rect key="frame" x="654.5" y="0.0" width="71.5" height="45"/>
+                                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                 <state key="normal" title="3">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
                                                                 <connections>
-                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4N2-YT-yks"/>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rda-N5-q3z"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78U-kL-0Mp">
-                                                                <rect key="frame" x="318" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywv-9v-yMf">
+                                                                <rect key="frame" x="736" y="0.0" width="72" height="45"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                 <state key="normal" title="+">
@@ -308,9 +936,78 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="23"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Sv-o0-d26"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qib-Gh-uu7">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="45"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="goC-Gm-UaS"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgf-vy-1Fp">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="45"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VE-vc-Ww4"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qc-cb-F0G">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="45"/>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
+                                                                <connections>
+                                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4N2-YT-yks"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78U-kL-0Mp">
+                                                                <rect key="frame" x="808" y="0.0" width="0.0" height="45"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                                <state key="normal" title="+">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="50"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                                                 <connections>
                                                                     <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ny1-Gh-ZG5"/>
                                                                 </connections>
@@ -318,10 +1015,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="04O-Hy-MrG">
-                                                        <rect key="frame" x="0.0" y="446.5" width="414" height="101.5"/>
+                                                        <rect key="frame" x="0.0" y="219" width="808" height="44.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkB-Pw-gOh">
-                                                                <rect key="frame" x="0.0" y="0.0" width="202" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkB-Pw-gOh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="44.5"/>
                                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                 <state key="normal" title="0">
@@ -329,15 +1026,16 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="50"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                                                 <connections>
                                                                     <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FA0-aR-9fC"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYy-YR-10T">
-                                                                <rect key="frame" x="212" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYy-YR-10T">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="44.5"/>
                                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                 <state key="normal" title=".">
@@ -345,15 +1043,16 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="46"/>
+                                                                        <integer key="value" value="50"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                                                 <connections>
                                                                     <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieR-GT-fNU"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19u-5m-djH">
-                                                                <rect key="frame" x="318" y="0.0" width="96" height="101.5"/>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19u-5m-djH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="44.5"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                 <state key="normal" title="=">
@@ -361,17 +1060,188 @@
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                        <integer key="value" value="45"/>
+                                                                        <integer key="value" value="50"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <variation key="heightClass=regular-widthClass=compact" hidden="NO"/>
                                                                 <connections>
                                                                     <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVG-ei-kwe"/>
                                                                 </connections>
                                                             </button>
+                                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3vU-Lr-CLK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="480.5" height="44.5"/>
+                                                                <subviews>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfA-LG-9k4">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="Rad">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yc9-vE-6mw"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8W-eK-BcG">
+                                                                        <rect key="frame" x="82" y="0.0" width="71.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="sinh">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qd-K9-1as"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c84-zF-8SM">
+                                                                        <rect key="frame" x="163.5" y="0.0" width="72" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="cosh">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tv1-DO-6vh"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taC-Ln-UKc">
+                                                                        <rect key="frame" x="245.5" y="0.0" width="71.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="tanh">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zL5-bt-sO4"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jr-7x-P68">
+                                                                        <rect key="frame" x="327" y="0.0" width="72" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                        <state key="normal" title="π">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIb-cF-Cb7"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB8-jr-mkb">
+                                                                        <rect key="frame" x="409" y="0.0" width="71.5" height="44.5"/>
+                                                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                        <state key="normal" title="Rand">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IKT-de-Tzf"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                            </stackView>
+                                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xFH-bS-ODF">
+                                                                <rect key="frame" x="490.5" y="0.0" width="317.5" height="44.5"/>
+                                                                <subviews>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMM-Ch-SEM">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="44.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <state key="normal" title="0">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zDa-Nr-qla"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9P-Xx-JhM">
+                                                                        <rect key="frame" x="163.5" y="0.0" width="72" height="44.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <state key="normal" title=".">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1L-qZ-UBn"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cta-R4-MSf">
+                                                                        <rect key="frame" x="245.5" y="0.0" width="72" height="44.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <state key="normal" title="=">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="23"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                                        <connections>
+                                                                            <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="on3-wC-6E3"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="Cta-R4-MSf" firstAttribute="width" secondItem="H9P-Xx-JhM" secondAttribute="width" id="fcl-Ko-sYx"/>
+                                                                    <constraint firstItem="H9P-Xx-JhM" firstAttribute="width" secondItem="VMM-Ch-SEM" secondAttribute="width" multiplier="0.47" id="ugp-Ro-78e"/>
+                                                                </constraints>
+                                                                <variation key="heightClass=compact-widthClass=regular" hidden="NO"/>
+                                                            </stackView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="xYy-YR-10T" firstAttribute="width" secondItem="EkB-Pw-gOh" secondAttribute="width" multiplier="0.475" id="4L3-6D-4sl"/>
-                                                            <constraint firstItem="19u-5m-djH" firstAttribute="width" secondItem="xYy-YR-10T" secondAttribute="width" multiplier="1.00365" id="quP-Xi-qjh"/>
+                                                            <constraint firstItem="19u-5m-djH" firstAttribute="width" secondItem="xYy-YR-10T" secondAttribute="width" id="4ef-Hp-gIy"/>
+                                                            <constraint firstItem="xYy-YR-10T" firstAttribute="width" secondItem="EkB-Pw-gOh" secondAttribute="width" multiplier="0.47" id="YGz-WZ-c8s"/>
+                                                            <constraint firstItem="xFH-bS-ODF" firstAttribute="width" secondItem="3vU-Lr-CLK" secondAttribute="width" multiplier="0.66" id="e5B-Yd-vv3"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
@@ -391,33 +1261,39 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vFB-HM-hB3"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vFB-HM-hB3" firstAttribute="trailing" secondItem="bVk-66-aUc" secondAttribute="trailing" id="48e-pZ-hYX"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="top" secondItem="vFB-HM-hB3" secondAttribute="top" id="EdD-CN-pAi"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="trailing" secondItem="vFB-HM-hB3" secondAttribute="trailing" id="JQ8-0P-VFs"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="leading" secondItem="vFB-HM-hB3" secondAttribute="leading" id="LEw-97-z1Y"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="top" secondItem="vFB-HM-hB3" secondAttribute="top" id="MjP-zB-WBe"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="top" secondItem="vFB-HM-hB3" secondAttribute="top" id="Mjd-aZ-k8S"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="bottom" secondItem="vFB-HM-hB3" secondAttribute="bottom" id="N1q-zX-wUN"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="leading" secondItem="vFB-HM-hB3" secondAttribute="leading" id="ZNa-m1-fSj"/>
-                            <constraint firstItem="vFB-HM-hB3" firstAttribute="bottom" secondItem="bVk-66-aUc" secondAttribute="bottom" id="bXe-cc-L0Z"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="bottom" secondItem="vFB-HM-hB3" secondAttribute="bottom" id="dW3-G0-hO0"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="leading" secondItem="vFB-HM-hB3" secondAttribute="leading" id="nfs-yD-9de"/>
-                            <constraint firstItem="bVk-66-aUc" firstAttribute="trailing" secondItem="vFB-HM-hB3" secondAttribute="trailing" id="v2L-sF-ZOT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bVk-66-aUc" secondAttribute="trailing" id="48e-pZ-hYX"/>
+                            <constraint firstItem="bVk-66-aUc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mjd-aZ-k8S"/>
+                            <constraint firstItem="bVk-66-aUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZNa-m1-fSj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bVk-66-aUc" secondAttribute="bottom" id="bXe-cc-L0Z"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Rad_Deg" destination="qfA-LG-9k4" id="GOc-TY-7lb"/>
+                        <outlet property="cos" destination="Iu3-JI-OxN" id="K49-yp-SKd"/>
+                        <outlet property="cosh" destination="c84-zF-8SM" id="LbG-iA-lVG"/>
                         <outlet property="displayLabel" destination="ATg-7n-QDa" id="q8H-LB-HTS"/>
+                        <outlet property="e2y" destination="Nuc-J8-G2l" id="izy-LP-V6F"/>
+                        <outlet property="ln2logy" destination="8L6-42-Xm5" id="hNQ-HI-980"/>
+                        <outlet property="sin" destination="BM1-9h-EhG" id="JPT-MV-9gR"/>
+                        <outlet property="sinh" destination="U8W-eK-BcG" id="Jcl-2P-LKn"/>
+                        <outlet property="tan" destination="kKX-EO-F7o" id="kna-FJ-TEh"/>
+                        <outlet property="tanh" destination="taC-Ln-UKc" id="zy3-bz-tCb"/>
+                        <outlet property="ten2two" destination="wAR-tU-tJz" id="6Kk-xs-Tiv"/>
+                        <outlet property="two2ten" destination="h29-zH-wbV" id="mGK-nZ-Yyt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="81.696428571428569"/>
+            <point key="canvasLocation" x="71.014492753623188" y="57.589285714285708"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
